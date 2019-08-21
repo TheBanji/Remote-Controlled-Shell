@@ -1,6 +1,6 @@
 import socket, os
 
-host = ("192.168.1.18", 1234) # IP of the server
+host = ("0.0.0.0", 1234) # IP of the server
 
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
